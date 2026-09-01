@@ -23,4 +23,25 @@ main {
     background-position: center;
 }
 
+.bg-playstation{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/fondo playstation.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
 
+
+.card-img-top {
+    height: 250px;        /* Cambia este valor al tamaño que prefieras */
+    object-fit: cover;    /* Evita que la foto se estire o se aplaste */
+    object-position: center; /* Centra el enfoque en la parte superior de la portada */
+}
+
+.bg-xbox {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/fondo xbox.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
