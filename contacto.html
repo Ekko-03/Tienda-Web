@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,7 +50,7 @@
                         <a class="nav-link" href="inicio_sesion.html">Cuenta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
                 
@@ -60,84 +60,38 @@
     <main class="container my-5 d-flex justify-content-center align-items-center">
         <div class="card shadow-lg border-0" style="max-width: 580px; width: 100%; background-color: #e9ecef;">
             <div class="py-2 px-3 fw-bold border-bottom" style="background-color: #cfd4da; color: #212529; font-size: 1.05rem;">
-                Registro de usuario
+                Formulario de contacto
             </div>
             <div class="card-body p-4 p-sm-5 text-dark">
                 <form action="#" method="POST">
                     <div class="mb-3">
-                        <label for="inputNombreCompleto" class="form-label fw-bold text-uppercase mb-1">NOMBRE COMPLETO</label>
-                        <input type="text" id="inputNombreCompleto" name="nombre_completo" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
                         <label for="inputEmail1" class="form-label fw-bold text-uppercase mb-1">CORREO</label>
                         <input type="email" id="inputEmail1" name="email" class="form-control" required>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="inputEmail2" class="form-label fw-bold text-uppercase mb-1">CONFIRMAR CORREO</label>
-                        <input type="email" id="inputEmail2" name="confirmar_email" class="form-control" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="inputPassword1" class="form-label fw-bold text-uppercase mb-1">CONTRASEÑA</label>
-                        <input type="password" id="inputPassword1" name="password" class="form-control" aria-describedby="passwordHelpBlock" required>
-                        <div id="passwordHelpBlock" class="form-text text-muted" style="font-size: 0.8rem;">
-                            Tu contraseña debe ser entre 6 a 20 caracteres y tener al menos una mayuscula y un caracter especial.
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="inputPassword2" class="form-label fw-bold text-uppercase mb-1">CONFIRMAR CONTRASEÑA</label>
-                        <input type="password" id="inputPassword2" name="confirmar_password" class="form-control" required>
-                    </div>
-
-                    <div class="mb-4">
-                        <label for="inputTelefono" class="form-label fw-bold mb-1">TELEFONO (opcional)</label>
-                        <input type="tel" id="inputTelefono" name="telefono" class="form-control">
-                    </div>
-
                     <div class="row g-3 mb-4">
                         <div class="col-sm-6">
-                            <label for="inputRegion" class="form-label visually-hidden">Región</label>
-                            <select id="inputRegion" name="region" class="form-select text-truncate" required>
-                                <option value="" selected disabled>-- Seleccione la región --</option>
-                                <option value="metropolitana">Región Metropolitana de Santiago</option>
-                                <option value="araucania">Región de la Araucanía</option>
-                                <option value="nuble">Región de Ñuble</option>
-                                <option value="arica">Región de Arica y Parinacota</option>
-                                <option value="tarapaca">Región de Tarapacá</option>
-                                <option value="antofagasta">Región de Antofagasta</option>
-                                <option value="atacama">Región de Atacama</option>
-                                <option value="coquimbo">Región de Coquimbo</option>
-                                <option value="valparaiso">Región de Valparaíso</option>
-                                <option value="ohiggins">Región del Libertador General Bernardo O'Higgins</option>
-                                <option value="maule">Región del Maule</option>
-                                <option value="biobio">Región del Biobío</option>
-                                <option value="los_rios">Región de Los Ríos</option>
-                                <option value="los_lagos">Región de Los Lagos</option>
-                                <option value="aysen">Región de Aysén</option>
-                                <option value="magallanes">Región de Magallanes</option>
+                            <label for="input_contacto" class="form-label visually-hidden">Asunto</label>
+                            <select id="input_contacto" name="contacto" class="form-select text-truncate" required>
+                                <option value="" selected disabled>-- Seleccione el asunto --</option>
+                                <option value="p_registro">Problemas con registro</option>
+                                <option value="p_login">Problemas con inicio de sesión</option>
+                                <option value="p_cuenta">Otros problemas con su cuenta</option>
+                                <option value="p_sitio">Problemas con el sitio</option>
+                                <option value="p_precio">Problemas de precio</option>
+                                <option value="p_cobro">Problemas de cobro</option>
+                                <option value="p_otros">Otros problemas</option>
+                                <option value="sugerencia">Sugerencias</option>
+                                <option value="reclamo">Reclamos</option>
                             </select>
                         </div>
-                        <div class="col-sm-6">
-                            <label for="inputComuna" class="form-label visually-hidden">Comuna</label>
-                            <select id="inputComuna" name="comuna" class="form-select text-truncate" required>
-                                <option value="" selected disabled>-- Seleccione la comuna --</option>
-                                <option value="linares">Linares</option>
-                                <option value="longavi">Longaví</option>
-                                <option value="concepcion">Concepción</option>
-                                <option value="santiago">Santiago</option>
-                                <option value="temuco">Temuco</option>
-                                <option value="chillan">Chillán</option>
-                                <option value="valparaiso">Valparaíso</option>
-                                <option value="talca">Talca</option>
-                            </select>
-                        </div>
+
+                    <div class="mb-4">
+                        <label for="inputMensaje" class="form-label fw-bold mb-1">Mensaje</label>
+                        <input type="msg" id="inputMensaje" name="mensaje" class="form-control">
                     </div>
 
                     <div class="text-center pt-2">
-                        <button type="submit" class="btn btn-light border border-dark border-2 px-5 py-2 fw-bold text-uppercase shadow-sm">REGISTRAR</button>
+                        <button type="submit" class="btn btn-light border border-dark border-2 px-5 py-2 fw-bold text-uppercase shadow-sm">Enviar Formulario</button>
                     </div>
                 </form>
             </div>
