@@ -14,25 +14,30 @@
 
 <body class="bg-playstation">
 
-
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="main.html">MegaGames</a>
+            <a class="navbar-brand d-flex flex-column align-items-center text-center py-1" href="main.html">
+                <img src="../img/logo.png" alt="Logo MegaGames" width="70" height="50" class="mb-1">
+                <span style="font-size: 0.9rem; line-height: 1;">MegaGames</span>
+            </a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Página Principal</a>
+                        <a class="nav-link active" aria-current="page" href="main.html">Página Principal</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="preventa.html">Preventas</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="videojuegos.html" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Videojuegos
                         </a>
@@ -42,18 +47,21 @@
                             <li><a class="dropdown-item" href="../videojuegos/xbox.html">Xbox</a></li>
                         </ul>
                     </li>
+                </ul>
+                
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="../inicio_sesion.html">Cuenta</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../contacto.html">Contacto</a>
+                        <a class="nav-link" href="../#contacto">Contacto</a>
                     </li>
-                    <li class="nav-item">
                 </ul>
+                
             </div>
         </div>
     </nav>
-
+</body> 
 
 
 
@@ -61,8 +69,11 @@
 
         <h1 class="text-white text-center mb-4">Catálogo Juegos Playstation</h1>
 
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4">
+
+        <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+
+
+            <div class="col">
                 <div class="card bg-dark text-white border-secondary shadow">
                     <img src="../img/assasins_creed_black.webp" class="card-img-top" alt="Zelda Tears of the Kingdom">
                     <div class="card-body text-center">
@@ -73,10 +84,9 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4">
+        
+            <div class="col">
                 <div class="card bg-dark text-white border-secondary shadow">
                     <img src="../img/fc26.webp" class="card-img-top" alt="Zelda Tears of the Kingdom">
                     <div class="card-body text-center">
@@ -87,9 +97,37 @@
                     </div>
                 </div>
             </div>
+
+
+
+            <div class="col">   
+                <div class="card bg-dark text-white border-secondary shadow">
+                    <img src="../img/metal_gear_solid.jpg" class="card-img-top" alt="Zelda Tears of the Kingdom">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">METAL GEAR SOLID V THE DEFINITIVE EXPERIENCE</h5>
+                        <p class="card-text text-secondary">PS5</p>
+                        <p class="card-text fs-4 fw-bold text-success">$18.990</p>
+                        <a href="#" class="btn btn-danger w-100">Comprar</a>
+                    </div>
+                </div>
+            </div> 
+             
+
+            <div class="col">    
+                <div class="card bg-dark text-white border-secondary shadow">
+                    <img src="../img/wolverine_juego.webp" class="card-img-top" alt="Zelda Tears of the Kingdom">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Marvel Wolverine</h5>
+                        <p class="card-text text-secondary">PS5</p>
+                        <p class="card-text fs-4 fw-bold text-success">$89.990</p>
+                        <a href="#" class="btn btn-danger w-100">Preventa</a>
+                    </div>
+                </div>
+           </div>
+
         </div>
 
-     </main>
+    </main>
 
 
 
@@ -133,5 +171,5 @@
 
 
 
-</body>
+
 </html>
