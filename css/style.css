@@ -1,6 +1,4 @@
 body {
-
-
             background-color: #353535;
             background-size: cover;
             background-repeat: no-repeat;
@@ -33,9 +31,9 @@ main {
 
 
 .card-img-top {
-    height: 250px;        /* Cambia este valor al tamaño que prefieras */
-    object-fit: cover;    /* Evita que la foto se estire o se aplaste */
-    object-position: center; /* Centra el enfoque en la parte superior de la portada */
+    height: 250px;       
+    object-fit: cover;  
+    object-position: center;
 }
 
 .bg-xbox {
@@ -44,4 +42,50 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+}
+body {
+    background-image:url('../img/fondo.jpg');
+    
+    background-color: #353535;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d) !important;
+    border-bottom: 2px solid #1c0adfca; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand span {
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px rgba(13, 7, 179, 0.724);
+}
+
+.navbar-nav .nav-link {
+    color: #b3b3b3 !important;
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.dropdown-menu {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+}
+
+.dropdown-item {
+    color: #b3b3b3;
+}
+
+.dropdown-item:hover {
+    background-color: #1c0adfca;
+    color: #ffffff;
 }
