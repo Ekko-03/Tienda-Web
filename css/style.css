@@ -14,7 +14,7 @@ main {
 
 .bg-nintendo {
     
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/fondo nintendo.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/fondo_mario2.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,7 +22,7 @@ main {
 }
 
 .bg-playstation{
-      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/fondo playstation.webp');
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/fondo_play.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -31,9 +31,9 @@ main {
 
 
 .card-img-top {
-    height: 250px;       
-    object-fit: cover;  
-    object-position: center;
+    height: 350px;           
+    object-fit: contain;     
+    padding: 15px 15px 0 15px; 
 }
 
 .bg-xbox {
